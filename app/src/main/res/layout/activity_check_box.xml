@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/cb_tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你会哪些开发？"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+    <CheckBox
+        android:id="@+id/cb_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andriod"
+        android:textSize="18sp"
+        android:layout_below="@id/cb_tv_1"/>
+
+    <CheckBox
+        android:id="@+id/cb_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IOS"
+        android:textSize="18sp"
+        android:layout_below="@id/cb_1"/>
+
+    <CheckBox
+        android:id="@+id/cb_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="H5"
+        android:textSize="18sp"
+        android:layout_below="@id/cb_2"/>
+
+    <CheckBox
+        android:id="@+id/cb_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JAVA"
+        android:textSize="18sp"
+        android:layout_below="@id/cb_3"/>
+
+    <LinearLayout
+        android:id="@+id/cb_l_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/cb_4"
+        android:layout_marginTop="20dp"
+        android:background="#cccccc">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的兴趣："
+            android:textColor="#000"
+            android:textSize="18sp"/>
+        <CheckBox
+            android:id="@+id/cb_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JAVA"
+            android:textSize="18sp"
+            android:button="@drawable/bg_checkbox"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHP"
+            android:textSize="18sp"
+            android:button="@drawable/bg_checkbox"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO"
+            android:textSize="18sp"
+            android:button="@drawable/bg_checkbox"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PYTHON"
+            android:textSize="18sp"
+            android:button="@drawable/bg_checkbox"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</RelativeLayout>
