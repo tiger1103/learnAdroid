@@ -26,7 +26,10 @@
         <activity android:name=".listview.ListViewActivity" />
         <activity android:name=".gridview.GridViewActivity" />
         <activity android:name=".recycleview.RecycleViewActivity" />
-        <activity android:name=".recycleview.LineaRecycleViewActivity"></activity>
+        <activity android:name=".recycleview.LineaRecycleViewActivity" />
+        <activity android:name=".recycleview.HorRecycleViewActivity" />
+        <activity android:name=".recycleview.GridRecycleViewActivity" />
+        <activity android:name=".recycleview.PuRecycleViewActivity"></activity>
     </application>
 
 </manifest>

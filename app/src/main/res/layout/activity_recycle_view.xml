@@ -9,6 +9,27 @@
         android:id="@+id/btn_linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="recycleViewLinear"
+        android:text="列表视图"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_hor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="水平滚动"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="网格视图"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_pu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="瀑布流视图"
         android:textAllCaps="false"/>
 </LinearLayout>
