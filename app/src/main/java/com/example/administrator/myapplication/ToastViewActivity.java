@@ -10,9 +10,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.administrator.myapplication.util.ToastUtil;
+
 
 public class ToastViewActivity extends AppCompatActivity {
-    private Button btnToast1,btnToast2,btnToast3;
+    private Button btnToast1,btnToast2,btnToast3,btnToast4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,10 +22,12 @@ public class ToastViewActivity extends AppCompatActivity {
         btnToast1 = findViewById(R.id.bt_toast_1);
         btnToast2 = findViewById(R.id.bt_toast_2);
         btnToast3 = findViewById(R.id.bt_toast_3);
+        btnToast4 = findViewById(R.id.bt_toast_4);
         Onclick onclick = new Onclick();
         btnToast1.setOnClickListener(onclick);
         btnToast2.setOnClickListener(onclick);
         btnToast3.setOnClickListener(onclick);
+        btnToast4.setOnClickListener(onclick);
     }
 
     private class Onclick implements View.OnClickListener{
@@ -50,6 +54,9 @@ public class ToastViewActivity extends AppCompatActivity {
                     customToast.setDuration(Toast.LENGTH_LONG);
                     customToast.setView(view);
                     customToast.show();
+                    break;
+                case R.id.bt_toast_4:
+                    ToastUtil.showMsg(ToastViewActivity.this,"包装的toast");
                     break;
             }
         }

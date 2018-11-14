@@ -32,7 +32,8 @@
         <activity android:name=".recycleview.PuRecycleViewActivity" />
         <activity android:name=".WebViewActivity" />
         <activity android:name=".ToastViewActivity" />
-        <activity android:name=".UIActivity"></activity>
+        <activity android:name=".UIActivity" />
+        <activity android:name=".DialogActivity"></activity>
     </application>
 
 </manifest>

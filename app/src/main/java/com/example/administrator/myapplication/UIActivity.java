@@ -13,7 +13,7 @@ import com.example.administrator.myapplication.recycleview.RecycleViewActivity;
 public class UIActivity extends AppCompatActivity {
     private Button btnButton,btnEditText,btnRadioButton,btnCheckBox
             ,btnImageView,btnListView,btnGridView,btnRecycleView,btnWebView
-            ,btnToast;
+            ,btnToast,btnDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +28,7 @@ public class UIActivity extends AppCompatActivity {
         btnRecycleView = findViewById(R.id.btn_recycleView);
         btnWebView = findViewById(R.id.btn_webView);
         btnToast = findViewById(R.id.btn_toast);
+        btnDialog = findViewById(R.id.btn_dialog);
         //创建事件对象
         setListeners();
     }
@@ -44,6 +45,7 @@ public class UIActivity extends AppCompatActivity {
         btnRecycleView.setOnClickListener(onclick);
         btnWebView.setOnClickListener(onclick);
         btnToast.setOnClickListener(onclick);
+        btnDialog.setOnClickListener(onclick);
     }
 
     private class Onclick implements View.OnClickListener{
@@ -90,6 +92,10 @@ public class UIActivity extends AppCompatActivity {
                 case R.id.btn_toast:
                     //跳转到Toast演示界面
                     intent = new Intent(UIActivity.this,ToastViewActivity.class);
+                    break;
+                case R.id.btn_dialog:
+                    //跳转到Dialog演示界面
+                    intent = new Intent(getApplicationContext(),DialogActivity.class);
                     break;
             }
             startActivity(intent);

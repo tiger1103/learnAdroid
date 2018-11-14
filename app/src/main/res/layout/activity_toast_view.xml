@@ -19,4 +19,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="自定义"/>
+
+    <Button
+        android:id="@+id/bt_toast_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToastUtil"
+        android:textAllCaps="false"/>
 </LinearLayout>
