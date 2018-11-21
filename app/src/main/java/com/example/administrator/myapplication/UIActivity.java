@@ -13,7 +13,7 @@ import com.example.administrator.myapplication.recycleview.RecycleViewActivity;
 public class UIActivity extends AppCompatActivity {
     private Button btnButton,btnEditText,btnRadioButton,btnCheckBox
             ,btnImageView,btnListView,btnGridView,btnRecycleView,btnWebView
-            ,btnToast,btnDialog;
+            ,btnToast,btnDialog,btnProgress,btnCustomDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +29,8 @@ public class UIActivity extends AppCompatActivity {
         btnWebView = findViewById(R.id.btn_webView);
         btnToast = findViewById(R.id.btn_toast);
         btnDialog = findViewById(R.id.btn_dialog);
+        btnProgress = findViewById(R.id.btn_progress);
+        btnCustomDialog = findViewById(R.id.main_btn_custom_dialog);
         //创建事件对象
         setListeners();
     }
@@ -46,6 +48,8 @@ public class UIActivity extends AppCompatActivity {
         btnWebView.setOnClickListener(onclick);
         btnToast.setOnClickListener(onclick);
         btnDialog.setOnClickListener(onclick);
+        btnProgress.setOnClickListener(onclick);
+        btnCustomDialog.setOnClickListener(onclick);
     }
 
     private class Onclick implements View.OnClickListener{
@@ -96,6 +100,14 @@ public class UIActivity extends AppCompatActivity {
                 case R.id.btn_dialog:
                     //跳转到Dialog演示界面
                     intent = new Intent(getApplicationContext(),DialogActivity.class);
+                    break;
+                case R.id.btn_progress:
+                    //跳转到Progress演示界面
+                    intent = new Intent(getApplicationContext(),ProgressActivity.class);
+                    break;
+                case R.id.main_btn_custom_dialog:
+                    //跳转到自定义弹出框CustomDialog
+                    intent = new Intent(getApplicationContext(),CustomDialogActivity.class);
                     break;
             }
             startActivity(intent);

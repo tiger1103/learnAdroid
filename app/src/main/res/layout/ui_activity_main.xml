@@ -85,6 +85,19 @@
             android:text="DialogView"
             android:textAllCaps="false"/>
 
+        <Button
+            android:id="@+id/btn_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Progress"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/main_btn_custom_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CustomDialog"
+            android:textAllCaps="false"/>
+
         <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
