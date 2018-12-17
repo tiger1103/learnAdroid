@@ -13,7 +13,7 @@ import com.example.administrator.myapplication.recycleview.RecycleViewActivity;
 public class UIActivity extends AppCompatActivity {
     private Button btnButton,btnEditText,btnRadioButton,btnCheckBox
             ,btnImageView,btnListView,btnGridView,btnRecycleView,btnWebView
-            ,btnToast,btnDialog,btnProgress,btnCustomDialog;
+            ,btnToast,btnDialog,btnProgress,btnCustomDialog,btnPopupWindow;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +31,7 @@ public class UIActivity extends AppCompatActivity {
         btnDialog = findViewById(R.id.btn_dialog);
         btnProgress = findViewById(R.id.btn_progress);
         btnCustomDialog = findViewById(R.id.main_btn_custom_dialog);
+        btnPopupWindow = findViewById(R.id.main_btn_popup_window);
         //创建事件对象
         setListeners();
     }
@@ -50,6 +51,7 @@ public class UIActivity extends AppCompatActivity {
         btnDialog.setOnClickListener(onclick);
         btnProgress.setOnClickListener(onclick);
         btnCustomDialog.setOnClickListener(onclick);
+        btnPopupWindow.setOnClickListener(onclick);
     }
 
     private class Onclick implements View.OnClickListener{
@@ -108,6 +110,10 @@ public class UIActivity extends AppCompatActivity {
                 case R.id.main_btn_custom_dialog:
                     //跳转到自定义弹出框CustomDialog
                     intent = new Intent(getApplicationContext(),CustomDialogActivity.class);
+                    break;
+                case R.id.main_btn_popup_window:
+                    //跳转到popupWindow界面
+                    intent = new Intent(getApplicationContext(),PopupWindowActivity.class);
                     break;
             }
             startActivity(intent);
